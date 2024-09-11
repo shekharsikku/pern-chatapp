@@ -13,24 +13,24 @@
     "noImplicitAny": true,
     "strictNullChecks": true,
     "baseUrl": ".",
-    "rootDir": "backend/src",
-    "outDir": "backend/dist",
+    "rootDir": "src",
+    "outDir": "dist",
     "typeRoots": [
       "node_modules/@types",
-      "backend/src/@types"
+      "src/@types"
     ],
   },
   "ts-node": {
     "files": true,
   },
   "include": [
-    "backend/src/**/*.ts",
+    "src/**/*.ts",
     "backend/prisma/**/*",
   ],
   "exclude": [
     "node_modules",
-    "backend/dist/**/*",
-    "frontend/dist/**/*",
+    "dist/**/*",
+    "client/dist/**/*",
     "**/*.spec.ts",
   ]
 }

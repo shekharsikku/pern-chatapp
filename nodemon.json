@@ -1,13 +1,13 @@
 {
   "watch": [
-    "backend/src",
-    "backend/prisma"
+    "src",
+    "prisma"
   ],
   "ignore": [
     "node_modules",
-    "backend/dist"
+    "dist"
   ],
   "ext": ".ts, .js, .json, .prisma",
-  "exec": "ts-node backend/src/index.ts",
+  "exec": "ts-node src/index.ts",
   "delay": 1000
 }

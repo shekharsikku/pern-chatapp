@@ -2,11 +2,11 @@
   "name": "pern-chatapp",
   "version": "1.0.0",
   "description": "",
-  "main": "backend/dist/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "dev": "concurrently \"nodemon\" \"npm run dev --prefix frontend\"",
-    "build": "npm install && tsc && prisma generate --schema=backend/prisma/schema.prisma &&  npm install --prefix frontend && npm run build --prefix frontend",
-    "start": "node backend/dist/index.js"
+    "build": "tsc && prisma generate --schema=./prisma/schema.prisma && npm run build --prefix client",
+    "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "",

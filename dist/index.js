@@ -18,9 +18,9 @@ socket_1.app.use("/api/auth", auth_route_1.default);
 socket_1.app.use("/api/messages", message_route_1.default);
 if (process.env.NODE_ENV !== "development") {
     const __dirname = path_1.default.resolve();
-    socket_1.app.use(express_1.default.static(path_1.default.join(__dirname, "/frontend/dist")));
+    socket_1.app.use(express_1.default.static(path_1.default.join(__dirname, "/client/dist")));
     socket_1.app.get("*", (req, res) => {
-        res.sendFile(path_1.default.join(__dirname, "frontend", "dist", "index.html"));
+        res.sendFile(path_1.default.join(__dirname, "client/dist", "index.html"));
     });
 }
 socket_1.server.listen(PORT, () => {

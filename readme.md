@@ -1,6 +1,6 @@
 # PERN Stack Project: Build a Real Time Chat App | TypeScript, React, Prisma, PostgreSQL
 
-![Demo App](/frontend/public/assets/demo.png)
+![Demo App](/client/public/assets/demo.png)
 
 ## 🌟 Introduction
 
